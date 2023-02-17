@@ -1,3 +1,5 @@
+include(ExternalProject)
+
 set(PULSEAUDIO_BUILD_DIR "${CMAKE_CURRENT_BINARY_DIR}/pulsebuild")
 
 # This command runs "meson setup" to generate pulse/version.h

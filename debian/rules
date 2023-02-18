@@ -16,7 +16,7 @@ override_dh_auto_configure:
 	wget -vcP ../.. \
 		--content-disposition \
 		--trust-server-name ${PA_URL}
-	tar -C 3rdparty -xJvf ../../pulseaudio-${PA_VER}.tar.xz pulseaudio-${PA_VER}/src/pulsecore
+	tar -C 3rdparty -xJvf ../../pulseaudio-${PA_VER}.tar.xz pulseaudio-${PA_VER}/
 	# Required to allow autoselecting a build system
 	rm Makefile
 	dh_auto_configure -- \
